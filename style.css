@@ -635,6 +635,98 @@ footer .copy {
   border-radius: 20px;
 }
 /* End About Page */
+/* Start Contact Page */
+#contact-deat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#contact-deat .deat {
+  width: 40%;
+}
+#contact-deat .deat span,
+#form-deat form span {
+  font-size: 12px;
+}
+#contact-deat .deat h2,
+#form-deat form h2 {
+  font-size: 26px;
+  font-weight: 35px;
+  padding: 20px 0;
+}
+#contact-deat .deat h3 {
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+#contact-deat .deat li {
+  list-style: none;
+  display: flex;
+  padding: 10px 0;
+}
+#contact-deat .deat li i {
+  font-size: 14px;
+  padding-right: 22px;
+}
+#contact-deat .deat li p {
+  font-size: 14px;
+  margin: 0;
+}
+#contact-deat .map {
+  width: 55%;
+  height: 400px;
+}
+#contact-deat .map iframe {
+  width: 100%;
+  height: 100%;
+}
+#form-deat {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid #1e1e1e;
+}
+#form-deat form {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-deat form input,
+#form-deat form textarea {
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px;
+  border: 1px solid #e1e1e1;
+}
+#form-deat form button {
+  background-color: #088178;
+  color: #fff;
+}
+#form-deat .people div {
+  padding-bottom: 25px;
+  display: flex;
+  align-items: flex-start;
+}
+#form-deat .people div img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+#form-deat .people div p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 25px;
+}
+#form-deat .people div p span {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+/* End Contact Page */
 /* Start Media Query */
 @media (max-width: 799px) {
   .section-p1 {
@@ -713,6 +805,13 @@ footer .copy {
   }
   #newsletter .form {
     width: 70%;
+  }
+  /* Contact page */
+  #form-deat {
+    padding: 40px;
+  }
+  #form-deat form {
+    width: 50%;
   }
 }
 @media (max-width: 477px) {
@@ -808,5 +907,25 @@ footer .copy {
   }
   #about-app .video {
     width: 100%;
+  }
+  /* Contact Page*/
+  #contact-deat {
+    flex-direction: column;
+  }
+  #contact-deat .deat {
+    width: 100%;
+  }
+  #contact-deat .map {
+    margin-top: 30px;
+    width: 100%;
+  }
+  #form-deat {
+    margin: 10px;
+    padding: 30px 10px;
+    flex-wrap: wrap;
+  }
+  #form-deat form {
+    width: 100%;
+    margin-bottom: 30px;
   }
 }
